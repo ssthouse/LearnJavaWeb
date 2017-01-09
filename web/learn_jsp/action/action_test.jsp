@@ -12,5 +12,14 @@
 </head>
 <body>
 
+<p>this is a action test jsp page!</p>
+
+<jsp:include page="../simple.jsp"/>
+
+<jsp:forward page="disp_param.jsp">
+    <jsp:param name="username" value="ssthouse"/>
+    <jsp:param name="age" value="21"/>
+</jsp:forward>
+
 </body>
 </html>
