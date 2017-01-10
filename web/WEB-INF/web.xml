@@ -4,16 +4,31 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <display-name>Learn</display-name>
+    <!--下面的代码  并没有起作用...-->
+    <!--<servlet>-->
+        <!--<servlet-name>get</servlet-name>-->
+        <!--<servlet-class>com.ssthouse.servlet.GetServlet</servlet-class>-->
+    <!--</servlet>-->
 
-    <servlet>
-        <servlet-name>get</servlet-name>
-        <servlet-class>com.ssthouse.servlet.GetServlet</servlet-class>
-    </servlet>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>get</servlet-name>-->
+        <!--<url-pattern>/get</url-pattern>-->
+    <!--</servlet-mapping>-->
 
-    <servlet-mapping>
-        <servlet-name>get</servlet-name>
-        <url-pattern>/get</url-pattern>
-    </servlet-mapping>
+    <filter>
+        <filter-name>strut2</filter-name>
+        <filter-class>
+            org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
+        </filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>strut2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
 
 </web-app>
