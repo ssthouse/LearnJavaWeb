@@ -33,8 +33,12 @@
     </welcome-file-list>
 
     <error-page>
+        <!--使用异常类型筛选-->
+        <!--<exception-type>java.lang.Exception</exception-type>-->
+
+        <!--使用 http 返回类型筛选-->
         <error-code>404</error-code>
-        <location>/error_one.jsp</location>
+        <location>/error/error_one.jsp</location>
     </error-page>
 
 </web-app>
