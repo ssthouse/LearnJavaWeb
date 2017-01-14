@@ -6,13 +6,13 @@
 
     <!--下面的代码  并没有起作用...-->
     <!--<servlet>-->
-        <!--<servlet-name>get</servlet-name>-->
-        <!--<servlet-class>com.ssthouse.servlet.GetServlet</servlet-class>-->
+    <!--<servlet-name>get</servlet-name>-->
+    <!--<servlet-class>com.ssthouse.servlet.GetServlet</servlet-class>-->
     <!--</servlet>-->
 
     <!--<servlet-mapping>-->
-        <!--<servlet-name>get</servlet-name>-->
-        <!--<url-pattern>/get</url-pattern>-->
+    <!--<servlet-name>get</servlet-name>-->
+    <!--<url-pattern>/get</url-pattern>-->
     <!--</servlet-mapping>-->
 
     <filter>
@@ -28,7 +28,13 @@
     </filter-mapping>
 
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>welcome_4one.jsp</welcome-file>
+        <welcome-file>welcome_two.jsp</welcome-file>
     </welcome-file-list>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error_one.jsp</location>
+    </error-page>
 
 </web-app>
