@@ -6,6 +6,9 @@
 
     <constant name="struts.enable.DynamicMethodInvocation" value="true" />
 
+    <!--全局异常处理-->
+    <include file="global_exception.xml"/>
+
     <!--默认空间-->
     <package name="learn_result_type" extends="struts-default">
         <!--全局的 result-->
