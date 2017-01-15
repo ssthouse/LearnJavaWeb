@@ -5,6 +5,7 @@
 <struts>
 
     <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <constant name="struts.i18n.encoding" value="utf-8"/>
 
     <!--全局异常处理-->
     <include file="global_exception.xml"/>
@@ -63,8 +64,11 @@
     <!--learn type converter-->
     <package name="learn_type_converter" namespace="/learn_type_converter" extends="struts-default">
         <action name="list" class="com.action.learn_type_converter.ListAction">
-            <result name="list">/learn_type_converter/list.jsp</result>
-            <result name="map">/learn_type_converter/map.jsp</result>
+            <result name="list">/learn_type_converter/list_result.jsp</result>
+        </action>
+
+        <action name="map" class="com.action.learn_type_converter.MapAction">
+            <result name="map">/learn_type_converter/map_result.jsp</result>
         </action>
     </package>
 </struts>
