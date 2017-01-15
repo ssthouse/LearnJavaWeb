@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: ssthouse
@@ -12,6 +13,9 @@
 </head>
 <body>
     this is the error page!
-    came from click redirect
+    came from click redirect<br/>
+
+
+    <s:property value="info"/>
 </body>
 </html>

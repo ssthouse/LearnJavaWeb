@@ -8,6 +8,14 @@
 
     <!--默认空间-->
     <package name="learn_result_type" extends="struts-default">
+        <!--全局的 result-->
+        <global-results>
+            <result>success.jsp</result>
+        </global-results>
+
+        <!--默认 action-->
+        <!--<default-action-ref name="error"/>-->
+
         <action name="login" class="com.action.learn_result_type.LoginAction">
             <result name="success" type="redirectAction">
                 <param name="actionName">userLogin</param>
@@ -16,6 +24,10 @@
 
             <result name="error" type="redirectAction">
                 error
+            </result>
+
+            <result name="finish">
+                /learn_result_type/finish.jsp
             </result>
         </action>
 
