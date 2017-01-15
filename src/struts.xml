@@ -42,4 +42,11 @@
             <result>/learn_result_type/hello.jsp</result>
         </action>
     </package>
+
+    <!--learn_get_servlet_context命名空间-->
+    <package name="learn_get_servlet_context" namespace="/learn_get_servlet_context" extends="struts-default">
+        <action name="hello" class="com.action.learn_get_servlet_context.UserAction">
+            <result name="hello" type="dispatcher">/learn_get_servlet_context/hello.jsp</result>
+        </action>
+    </package>
 </struts>
