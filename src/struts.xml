@@ -71,4 +71,12 @@
             <result name="map">/learn_type_converter/map_result.jsp</result>
         </action>
     </package>
+
+    <!--learn data validate-->
+    <package name="learn_data_validate" namespace="/learn_data_validate" extends="struts-default">
+        <action name="login" class="com.action.learn_data_validate.LoginAction">
+            <result name="hello">/learn_data_validate/hello.jsp</result>
+            <result name="input">/learn_data_validate/input_error.jsp</result>
+        </action>
+    </package>
 </struts>
