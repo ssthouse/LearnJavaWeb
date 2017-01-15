@@ -49,4 +49,11 @@
             <result name="hello" type="dispatcher">/learn_get_servlet_context/hello.jsp</result>
         </action>
     </package>
+
+    <!--learn_model_driven 空间-->
+    <package name="learn_model_driven" namespace="/learn_model_driven" extends="struts-default">
+        <action name="login" class="com.action.learn_model_driven.LoginAction">
+            <result>/learn_model_driven/user.jsp</result>
+        </action>
+    </package>
 </struts>
