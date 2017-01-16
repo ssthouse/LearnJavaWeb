@@ -80,9 +80,17 @@
         </action>
     </package>
 
+    <!--learn_control_label-->
     <package name="learn_control_label" namespace="/learn_control_label" extends="struts-default">
         <action name="append" class="com.action.learn_control_label.AppendAction">
             <result>/learn_control_label/append_with_action.jsp</result>
+        </action>
+    </package>
+
+    <!--learn data label-->
+    <package name="learn_data_label" namespace="/learn_data_label" extends="struts-default">
+        <action name="user" class="com.action.learn_data_label.UserAction">
+            <result>/learn_data_label/success.jsp</result>
         </action>
     </package>
 </struts>
