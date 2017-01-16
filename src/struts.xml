@@ -79,4 +79,10 @@
             <result name="input">/learn_data_validate/input_error.jsp</result>
         </action>
     </package>
+
+    <package name="learn_control_label" namespace="/learn_control_label" extends="struts-default">
+        <action name="append" class="com.action.learn_control_label.AppendAction">
+            <result>/learn_control_label/append_with_action.jsp</result>
+        </action>
+    </package>
 </struts>
