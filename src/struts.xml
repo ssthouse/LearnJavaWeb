@@ -99,5 +99,9 @@
         <action name="checkbox" class="com.action.learn_form_label.CheckboxAction">
             <result>/learn_form_label/checkbox_result.jsp</result>
         </action>
+
+        <action name="check_list" class="com.action.learn_form_label.CheckListAction">
+            <result>/learn_form_label/check_list_result.jsp</result>
+        </action>
     </package>
 </struts>
