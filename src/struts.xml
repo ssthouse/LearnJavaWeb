@@ -93,4 +93,11 @@
             <result>/learn_data_label/success.jsp</result>
         </action>
     </package>
+
+    <!--learn form label-->
+    <package name="learn_form_label" namespace="/learn_form_label" extends="struts-default">
+        <action name="checkbox" class="com.action.learn_form_label.CheckboxAction">
+            <result>/learn_form_label/checkbox_result.jsp</result>
+        </action>
+    </package>
 </struts>
