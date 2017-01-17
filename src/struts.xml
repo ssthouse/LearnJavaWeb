@@ -107,6 +107,10 @@
 
     <!--learn interceptor-->
     <package name="learn_interceptor" namespace="/learn_interceptor" extends="struts-default">
+        <interceptors>
+            <interceptor name="timer_interceptor" class="com.action.learn_interceptor.TimerInterceptor"/>
+        </interceptors>
+
         <action name="action_one" class="com.action.learn_interceptor.FirstAction">
             <result type="chain">
                 <param name="actionName">action_two</param>
@@ -117,5 +121,11 @@
             <param name="aliases">#{'firstCountry':'secondCountry'}</param>
             <result>/learn_interceptor/action_two.jsp</result>
         </action>
+
+        <action name="time_interceptor" class="com.action.learn_interceptor.TimerAction">
+            <interceptor-ref name="timer_interceptor"/>
+            <result>/learn_interceptor/success.jsp</result>
+        </action>
     </package>
+
 </struts>
