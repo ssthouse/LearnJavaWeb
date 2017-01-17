@@ -104,4 +104,18 @@
             <result>/learn_form_label/check_list_result.jsp</result>
         </action>
     </package>
+
+    <!--learn interceptor-->
+    <package name="learn_interceptor" namespace="/learn_interceptor" extends="struts-default">
+        <action name="action_one" class="com.action.learn_interceptor.FirstAction">
+            <result type="chain">
+                <param name="actionName">action_two</param>
+                <param name="namespace">/learn_interceptor</param>
+            </result>
+        </action>
+        <action name="action_two" class="com.action.learn_interceptor.SecondAction">
+            <param name="aliases">#{'firstCountry':'secondCountry'}</param>
+            <result>/learn_interceptor/action_two.jsp</result>
+        </action>
+    </package>
 </struts>
