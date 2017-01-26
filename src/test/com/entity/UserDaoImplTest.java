@@ -29,7 +29,6 @@ public class UserDaoImplTest {
      */
     @Test
     public void testSave() throws Exception {
-//TODO: Test goes here...
         UserDao userDao = new UserDaoImpl();
         try {
             UserEntity userEntity = new UserEntity();
@@ -48,7 +47,6 @@ public class UserDaoImplTest {
      */
     @Test
     public void testFindById() throws Exception {
-//TODO: Test goes here... 
     }
 
     /**
@@ -56,7 +54,6 @@ public class UserDaoImplTest {
      */
     @Test
     public void testDelete() throws Exception {
-//TODO: Test goes here... 
     }
 
     /**
@@ -64,7 +61,6 @@ public class UserDaoImplTest {
      */
     @Test
     public void testUpdate() throws Exception {
-//TODO: Test goes here... 
     }
 
 
