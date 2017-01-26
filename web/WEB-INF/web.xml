@@ -15,17 +15,17 @@
     <!--<url-pattern>/get</url-pattern>-->
     <!--</servlet-mapping>-->
 
-    <filter>
-        <filter-name>strut2</filter-name>
-        <filter-class>
-            org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
-        </filter-class>
-    </filter>
+    <!--<filter>-->
+        <!--<filter-name>strut2</filter-name>-->
+        <!--<filter-class>-->
+            <!--org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter-->
+        <!--</filter-class>-->
+    <!--</filter>-->
 
-    <filter-mapping>
-        <filter-name>strut2</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+    <!--<filter-mapping>-->
+        <!--<filter-name>strut2</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
 
     <welcome-file-list>
         <welcome-file>welcome_4one.jsp</welcome-file>
@@ -41,4 +41,27 @@
         <location>/error/error_one.jsp</location>
     </error-page>
 
+
+    <!--使用 SpringMVC 管理-->
+    <servlet>
+        <servlet-name>HelloWeb</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWeb</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/HelloWeb-servlet.xml</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
 </web-app>

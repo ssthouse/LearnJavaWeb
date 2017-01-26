@@ -46,9 +46,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.9" level="application_server_libraries" />
-    <orderEntry type="library" name="mysql:mysql-connector-java:6.0.5" level="project" />
     <orderEntry type="library" name="struts2" level="project" />
-    <orderEntry type="library" name="Hibernate 5.2.3-5.2.3" level="project" />
     <orderEntry type="module-library">
       <library name="JUnit4">
         <CLASSES>
@@ -60,8 +58,9 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="com.google.code.gson:gson:2.8.0" level="project" />
-    <orderEntry type="library" name="Spring-4.3.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Spring MVC-4.3.6.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-aop-4.3.6" level="project" />
+    <orderEntry type="library" name="hibernate" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.40-bin" level="project" />
+    <orderEntry type="library" name="gson-2.8.0" level="project" />
   </component>
 </module>
